@@ -148,13 +148,13 @@ Should be in `json["NetworkSettings"]["IPAddress"]`.
 3. Set the static web listener to ip and port combo
 
 ```bash
-dokku network:set echo-server static-web-listener $docker_image_ip:$port
+dokku network:set $app static-web-listener $docker_image_ip:$port
 ```
 
 4. Remove the static web listener
 
 ```bash
-dokku network:set echo-server static-web-listener
+dokku network:set $app static-web-listener
 ```
 
 ## Configuring Nginx
